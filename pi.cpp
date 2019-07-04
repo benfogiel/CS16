@@ -29,7 +29,7 @@ int main(){
     }else{
       t = "terms";
     }
-    cout << "The approximate value of pi using " << term << " " << t << " is: " << pi << endl;
+    cout << "The approximate value of pi using " << term << " " << t << " is:" << pi << endl;
   }
   return 0;
 }
