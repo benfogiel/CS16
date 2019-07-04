@@ -16,7 +16,7 @@ int main(){
 
   while(n != -1){
     pi = 0.0;
-    cout << "Enter the value of the parameter 'n' in the Leibniz formula (or -1 to quit): " << endl;
+    cout << "Enter the value of the parameter 'n' in the Leibniz formula (or -1 to quit):" << endl;
     cin >> n;
     if (n == -1) return 0;
     term = n + 1;
