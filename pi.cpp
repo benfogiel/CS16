@@ -16,8 +16,9 @@ int main(){
 
   while(n != -1){
     pi = 0.0;
-    cout << "Enter the value of the parameter 'n' in the Leibniz formula (or -1 to quit):" << endl;
+    cout << "Enter the value of the parameter 'n' in the Leibniz formula (or -1 to quit): " << endl;
     cin >> n;
+    if (n == -1) return 0;
     term = n + 1;
     for (int i = 0; i < term; i++){
       pi = pi + (pow(-1.0, i)/(2.0*i+1.0));
