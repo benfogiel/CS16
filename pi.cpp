@@ -30,7 +30,7 @@ int main(){
     }else{
       t = "terms";
     }
-    cout << "The approximate value of pi using " << term << " " << t << " is: " << setprecision(3) << pi << endl;
+    cout << "The approximate value of pi using " << term << " " << t << " is: " << setprecision(4) << pi << endl;
   }
   return 0;
 }
