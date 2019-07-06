@@ -10,7 +10,7 @@ using namespace std;
 
 int main(){
 
-  double pi = 0.0;
+  double pi;
   int n;
   string t;
   int term;
@@ -30,7 +30,7 @@ int main(){
     }else{
       t = "terms";
     }
-    cout << "The approximate value of pi using " << term << " " << t << " is: " << setprecision(4) << pi << endl;
+    cout << "The approximate value of pi using " << term << " " << t << " is: " << setprecision(4) << static_cast<double>(pi) << endl;
   }
   return 0;
 }
