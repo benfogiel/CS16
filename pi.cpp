@@ -10,7 +10,7 @@ using namespace std;
 
 int main(){
 
-  double pi;
+  double pi = 0.0;
   int n;
   string t;
   int term;
@@ -24,7 +24,7 @@ int main(){
     for (int i = 0; i < term; i++){
       pi = pi + pow(-1.0, i)/(2.0*i+1.0);
     }
-    pi = pi * 4.000;
+    pi = pi * 4.0;
     if (n == 0){
       t = "term";
     }else{
