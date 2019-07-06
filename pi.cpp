@@ -4,6 +4,7 @@
 
 #include <cmath>
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -16,7 +17,7 @@ int main(){
 
   while(n != -1){
     pi = 0.0;
-    cout << "Enter the value of the parameter 'nin the Leibniz formula (or -1 to quit):" << endl;
+    cout << "Enter the value of the parameter 'n' in the Leibniz formula (or -1 to quit):" << endl;
     cin >> n;
     if (n == -1) return 0;
     term = n + 1;
@@ -24,12 +25,13 @@ int main(){
       pi = pi + (pow(-1.0, i)/(2.0*i+1.0));
     }
     pi = pi * 4.0;
+    
     if (n == 0){
       t = "term";
     }else{
       t = "terms";
     }
-    cout << "The approximate value of pi using " << term << " " << t << " is:" << pi << endl;
+    cout << "The approximate value of pi using " << term << " " << t << " is:" << std::setprecision(3) << pi << endl;
   }
   return 0;
 }
