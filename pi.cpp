@@ -22,10 +22,9 @@ int main(){
     if (n == -1) return 0;
     term = n + 1;
     for (int i = 0; i < term; i++){
-      pi = pi + (pow(-1.0, i)/(2.0*i+1.0));
+      pi = pi + pow(-1.0, i)/(2.0*i+1.0);
     }
-    pi = pi * 4.0;
-    
+    pi = pi * 4.000;
     if (n == 0){
       t = "term";
     }else{
